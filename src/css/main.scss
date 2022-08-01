@@ -1,3 +1,7 @@
+@import "_variables"; //變數編譯
+@import "_normalize";
+@import "_reset";
 
-@import "reset";
-@import "normalize";
+body{
+  background-color: $color1;
+}
