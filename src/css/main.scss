@@ -52,3 +52,8 @@ header{
         z-index: -2;
     }
 }
+
+::selection{
+    background-color: #D01A48;
+    color: #ffffff;
+}
