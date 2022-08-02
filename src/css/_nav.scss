@@ -134,21 +134,21 @@
     &:checked + label + .nav_left{
       display: block;
     }
-    &:checked + label{
-      .line0{
-        display: none;
-      }
-      .menu .line1{
-        transform: translateX(0) translateY(0) rotate(45deg) scaleX(1.1);
-       }
-       .menu .line2{
-          transform: translateX(0) translateY(-8px) rotate(-45deg) scaleX(1.1);
-        }
-       .menu .line_parent{
-          position: relative;
-          top: 7px;
-        }
-    }
+//    &:checked + label{
+//      .line0{
+//        display: none;
+//      }
+//      .menu .line1{
+//        transform: translateX(0) translateY(0) rotate(45deg) scaleX(1.1);
+//       }
+//       .menu .line2{
+//          transform: translateX(0) translateY(-8px) rotate(-45deg) scaleX(1.1);
+//        }
+//       .menu .line_parent{
+//          position: relative;
+//          top: 7px;
+//        }
+//    }
   }
 
 }
