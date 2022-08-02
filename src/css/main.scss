@@ -1,17 +1,7 @@
 @import "_variables"; //變數編譯
 @import "_normalize";
 @import "_reset";
-
-html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
+@import "_global";
 
 @import "_nav";
 
@@ -28,6 +18,9 @@ header{
     background-size: cover;
     position: relative;
     z-index: 1;
+    .header_wrap{
+      display: none;
+    }
     &::before{
       content: "";
       background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, black 100%);
