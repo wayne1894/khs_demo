@@ -15,10 +15,46 @@
    .nav_left{
      >li{
        display: inline-block;
+       position: relative;
+       .nav_menu{
+         display:none;
+         position:absolute;
+         &::before{
+           content: "";
+           display: block;
+           background-color: transparent;
+           height: 20px;
+         }
+       }
+       .nav_menu_area{
+         background-color: #fff;
+         width: 168px;
+         a{
+           display:block;
+           height: 39px;
+           line-height:39px;
+           padding: 0 24px;
+           text-decoration: none;
+           color: rgb(60, 60, 60);
+         }
+       }
+       >a{
+         display:block;
+         text-decoration: none;
+         color: #fff;
+         padding: 7px;
+       }
+       &:hover{
+          >a{
+            background-color: red;
+            border-radius: 3px;
+          }
+          .nav_menu{
+            display: block;
+          }
+        }
      }
-     .nav_menu{
-        display:none;
-     }
+     
    }
    .nav_right{
      margin-left: auto;
